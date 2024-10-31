@@ -18,18 +18,18 @@ public class Funciones1 {
 		int opcion = -1;
 		do {
 			opcion = Funciones.dimeEntero(
-					"Selecciona la longitud de conversion:\n 1. millas a kilometros\n 2. kilometros a millas\n 0. Salir ",
+					"Selecciona la longitud de conversión:\n 1. Millas a kilómetros\n 2. Kilómetros a millas\n 0. Salir ",
 					sc);
 			if (opcion == 1) {
-				millas = Funciones.dimeDouble("introduce las  millas que quieres convertir", sc);
+				millas = Funciones.dimeDouble("Introduce las  millas que quieres convertir", sc);
 				kilometros = Funciones1.millas_Kilometros(millas);
-				System.out.println(millas + "millas  son : " + kilometros + "Km");
+				System.out.println(millas + " millas  son : " + kilometros + "Km");
 			} else if (opcion == 2) {
-				kilometros = Funciones.dimeDouble("introduce los kilometros que quieres convertir", sc);
+				kilometros = Funciones.dimeDouble("Introduce los kilometros que quieres convertir", sc);
 				millas = Funciones1.kilometros_Millas(kilometros);
-				System.out.println(millas + "millas  son : " + kilometros + "Km");
+				System.out.println(kilometros + "Km  son : " + millas + " millas");
 			} else if (opcion == 0) {
-				System.out.println("has salido fuera");
+				System.out.println("Has salido fuera");
 			}
 		} while (opcion != 0);
 	}
@@ -48,18 +48,18 @@ public class Funciones1 {
 		int opcion = -1;
 		do {
 			opcion = Funciones.dimeEntero(
-					"Selecciona la longitud de conversion:\n 1. kilogramos a libras\n 2. libras a kilogramos\n 0. Salir ",
+					"Selecciona el peso de conversión:\n 1. Kilogramos a libras\n 2. Libras a kilogramos\n 0. Salir ",
 					sc);
 			if (opcion == 1) {
-				kilogramos = Funciones.dimeDouble("introduce los kilogramos que quieres convertir", sc);
+				kilogramos = Funciones.dimeDouble("Introduce los kilogramos que quieres convertir", sc);
 				libras = Funciones1.millas_Kilometros(kilogramos);
 				System.out.println(kilogramos + "kg  son : " + libras + "lb");
 			} else if (opcion == 2) {
-				libras = Funciones.dimeDouble("introduce los kilometros que quieres convertir", sc);
+				libras = Funciones.dimeDouble("Introduce las libras que quieres convertir", sc);
 				kilogramos = Funciones1.kilometros_Millas(libras);
 				System.out.println(libras + "lb  son : " + kilogramos + "Kg");
 			} else if (opcion == 0) {
-				System.out.println("has salido fuera");
+				System.out.println("Has salido fuera");
 			}
 
 		} while (opcion != 0);

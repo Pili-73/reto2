@@ -10,18 +10,20 @@ public class Funciones2 {
 		Double celsius, fahrenheit;
 		do {
 			opcion = Funciones.dimeEntero(
-					"Selecciona la conversión de temperatura \n1.Celsius a Farhenheit \n2.Farhenheit a Celsius \n0.Salir",
+					"Selecciona la temperatura de conversión: \n 1. Celsius a Farhenheit \n 2. Farhenheit a Celsius \n 0. Salir",
 					sc);
 			if (opcion == 1) {
-				celsius = Funciones.dimeDouble("Escribe los grados celsius", sc);
+				celsius = Funciones.dimeDouble("Introduce los grados celsius que quieres convertir", sc);
 				fahrenheit = Funciones.celsiusFahrenheit(celsius);
-				System.out.println(celsius + "º celsius son " + fahrenheit + "ºF");
+				System.out.println(celsius + "º celsius son: " + fahrenheit + "ºF");
 			} else if (opcion == 2) {
-				fahrenheit = Funciones.dimeDouble("Escribe los grados farhenheit", sc);
+				fahrenheit = Funciones.dimeDouble("Introduce los grados fahrenheit que quieres convertir", sc);
 				celsius = Funciones.fahrenheitCelsius(fahrenheit);
-				System.out.println(fahrenheit + "ºF son " + celsius + "º celsius");
+				System.out.println(fahrenheit + "ºF son: " + celsius + "º celsius");
+			} else if (opcion == 0) {
+				System.out.println("Has salido fuera");
 			}
-
+			
 		} while (opcion != 0);
 	}
 	
@@ -31,16 +33,18 @@ public class Funciones2 {
 		Double litros, galones;
 		do {
 			opcion = Funciones.dimeEntero(
-					"Selecciona la conversión de volumen \n1.Litros a Galones \n2.Galones a Litros \n0.Salir",
+					"Selecciona el volumen de conversión: \n 1. Litros a Galones \n 2. Galones a Litros \n 0. Salir",
 					sc);
 			if (opcion == 1) {
-				litros = Funciones.dimeDouble("Escribe los litros", sc);
+				litros = Funciones.dimeDouble("Introduce los litros que quieres convertir", sc);
 				galones = Funciones.litrosGalones(litros);
-				System.out.println(litros + " litros son " + galones + " galones");
+				System.out.println(litros + " litros son: " + galones + " galones");
 			} else if (opcion == 2) {
-				galones = Funciones.dimeDouble("Escribe los galones", sc);
+				galones = Funciones.dimeDouble("Introduce los galones que quieres convertir", sc);
 				litros = Funciones.galonesLitros(galones);
-				System.out.println(galones + " galones son " + litros + " litros" );
+				System.out.println(galones + " galones son: " + litros + " litros" );
+			} else if (opcion == 0) {
+				System.out.println("Has salido fuera");
 			}
 
 		} while (opcion != 0);
